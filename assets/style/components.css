@@ -1,0 +1,170 @@
+body {
+    font-family: 'Patrick Hand', cursive;
+}
+.main-content {
+    height: 100vh;
+}
+.loader-page {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: #2E78A5;
+    width: 100%;
+    height: 100vh;
+    transition: 1s;
+    z-index: 99999;
+}
+.loader-page.hidden {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0vh;
+    transition: 0.5s;
+}
+.loader-page .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Patrick Hand', cursive;
+}
+.loader-page img {
+    width: 180px;
+    transition: 0.5s;
+    animation: popUp 0.8s ease-in-out;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.loader-page img.hidden {
+    opacity: 0;
+}
+.loader-page .welcome {
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    transform: translateY(5%);
+    transition: 0.5s;
+    opacity: 1;
+}
+.loader-page .welcome.hidden {
+    transform: translateY(-50%);
+    opacity: 0;
+}
+@keyframes popUp {
+    0% {
+        transform: scale(0.8);
+    } 50% {
+        transform: scale(1.3);
+    } 100% {
+        transform: scale(1);
+    }
+}
+.sidebar {
+    width: 25%;
+    height: 100vh;
+    border-right: 1.5px solid #dce3e9;
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(230, 230, 230, 0.723);
+}
+.sidebar .sidebar-logo {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 3vh 7%;
+    border-bottom: 1.5px solid #dce3e9;
+    background-color: #2E78A5;
+}
+.sidebar .sidebar-logo img {
+    background-color: #fff;
+    width: 90%;
+    margin: auto;
+    border-radius: 50%;
+}
+.sidebar .sidebar-logo .col-8 .brand-name {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.8em;
+    font-family: 'Patrick Hand', cursive;
+}
+.sidebar .sidebar-logo .col-8 .tagline {
+    font-family: 'Patrick Hand', cursive;
+    color: #fff;
+}
+.sidebar .sidebar-menu {
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-top: 5vh;
+}
+.sidebar .sidebar-menu a{
+    margin-top: 1.5vh;
+    display: block;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: 600;
+    font-size: 1.2em;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    color: #2E78A5;
+    transition: 0.3s ease-in-out;
+    padding: 5px 20px;
+    width: 100%;
+    border-radius: 10px;
+}
+.sidebar .sidebar-menu a:hover {
+    background-color: #2E78A5;
+    color: #fff;
+}
+.sidebar .sidebar-menu a.active {
+    background-color: #2E78A5;
+    color: #fff;
+}
+.sidebar .sidebar-menu a i {
+    width: 30px;
+}
+section#frame-utama {
+    position: relative;
+    background-color: #fafdff;
+    width: 75%;
+    min-height: 100vh;
+    margin-left: 25%;  
+    padding: 20px; 
+    overflow-x: hidden;
+}
+section#frame-utama iframe {
+    width:100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.text-blue {
+    color: #2E78A5;
+}
+@media (max-width: 1024px) {
+    .sidebar {
+        transition: 0.5s ease-in-out;
+        width: 0%;
+    }
+    .sidebar .sidebar-logo .col-md-4 img {
+        width: 90%;
+    }
+    .sidebar .sidebar-logo .col-8 .brand-name {
+        font-size: 1.2em;
+    }
+    .sidebar .sidebar-logo,
+    .sidebar .sidebar-menu {
+        display: none;
+    }
+    a.hamburger-menu {
+        text-decoration: none;
+        font-size: 1.7em;
+        color: #2E78A5;
+        margin: 10px;
+    }
+    .sidebar.show {
+        width: 70%;
+    }
+    .sidebar.show .sidebar-logo,
+    .sidebar.show .sidebar-menu {
+        display: block;
+    }
+}

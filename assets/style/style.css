@@ -1,97 +1,66 @@
-body {
-    font-family: 'Patrick Hand', cursive;
+.beranda-content {
+    border-radius: 15px;
 }
-.loader-page {
-    position: relative;
-    top: 0%;
-    left: 0%;
-    background-color: #fff;
-    width: 100%;
-    height: 100vh;
-    transition: 1s;
-    z-index: 99999;
-}
-.loader-page.hidden {
-    border-bottom: 5px solid #2E78A5;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 0vh;
-}
-.loader-page .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Patrick Hand', cursive;
-}
-.loader-page img {
-    width: 180px;
-    transition: 0.5s;
-    animation: popUp 0.8s ease-in-out;
-}
-.loader-page img.hidden {
-    opacity: 0;
-}
-.loader-page .welcome {
-    color: #2E78A5;
-    font-size: 2em;
-    font-weight: bold;
-    transform: translateY(5%);
-    transition: 0.5s;
-    opacity: 1;
-}
-.loader-page .welcome.hidden {
-    transform: translateY(-50%);
-    opacity: 0;
-}
-@keyframes popUp {
-    0% {
-        transform: scale(0.8);
-    } 50% {
-        transform: scale(1.3);
-    } 100% {
-        transform: scale(1);
-    }
-}
-
-.navbar-c {
-    background-color: #fff;
-    /* border-bottom: 5px solid #2E78A5; */
-    /* filter: blur(5px); */
-}
-
-.navbar-c .logo {
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.navbar-c .logo img {
-    width: 56px;
-}
-.navbar-c #logo-name {
-    color: #2E78A5;
-    font-family: 'Patrick Hand', cursive;
-    font-weight: bold;
-    font-size: 1.4em;
-}
-
-section#home {
-    width: 100%;
-    height: 100vh;
-    background: url('../img/bg-book.jpg');
-    background-position: center;
-    background-size: cover;
-    padding-top: 20vh;
-}
-
-section#home .tagline {
-    font-size: 7em;
-    font-family: 'Inter', sans-serif;
+.beranda-content .brand-name {
     font-weight: bold;
     color: #fff;
+    background-color: #2E78A5;
+    font-family: 'Patrick Hand', cursive;
+    padding: 10px 15px;
+}
+.beranda-content .brand-name .col-8 {
+    font-size: 2em;
+}
+.beranda-content .brand-name small {
+    font-size: 0.5em;
+    font-weight: 500;   
+}
+.body-beranda-content {
+    background-color: #edf1f4;
+    padding: 10px 15px 20px 15px;
+}
+.beranda-content .content .chat-bubble {
+    display: block;
+    width: fit-content;
+    margin-top: 1vh;
+    background-color: #fefae0;
+    border-radius: 10px;
+    padding: 10px 20px;
 }
 
-section#home .tagline span {
+.beranda-content .content.d-flex .chat-bubble {
+    display: block;
+    width: fit-content;
+    margin-top: 1vh;
     background-color: #2E78A5;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+section#skill .pertanyaan {
+    position: relative;
+    background-color: #2E78A5;
+    color: #fff;
+    margin-bottom: 1vh;
+    width: fit-content;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+section#skill .pertanyaan small {
+    font-size: 0.7em;
+}
+section#skill .jawaban p {
+    border-radius: 10px;
+    background-color: #fefae0;
+    color: #fff;
+    padding: 10px 20px;
+}
+section#skill .jawaban ul li {
+    margin-top: 1.7vh;
+    width: fit-content;
+}
+section#skill .jawaban ul li img{
+    width: 55px;
+    filter: drop-shadow(0px 0px 10px rgba(128, 128, 128, 0.497));
 }
