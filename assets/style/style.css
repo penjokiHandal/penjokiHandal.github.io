@@ -38,6 +38,11 @@
     padding: 10px 20px;
 }
 
+section#skill {
+    padding: 15vh 0;
+    background: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+}
+
 section#skill .pertanyaan {
     position: relative;
     background-color: #2E78A5;
@@ -46,21 +51,62 @@ section#skill .pertanyaan {
     width: fit-content;
     padding: 5px 20px;
     border-radius: 10px;
+    max-width: 90%;
 }
-section#skill .pertanyaan small {
-    font-size: 0.7em;
-}
-section#skill .jawaban p {
+section#skill .jawaban {
+    position: relative;
     border-radius: 10px;
     background-color: #fefae0;
     color: #fff;
-    padding: 10px 20px;
-}
-section#skill .jawaban ul li {
-    margin-top: 1.7vh;
     width: fit-content;
+    padding: 5px 20px;
+    margin-bottom: 1vh;
+    max-width: 90%;
 }
-section#skill .jawaban ul li img{
+section#skill .pertanyaan small,
+section#skill .jawaban small {
+    font-size: 0.7em;
+}
+section#skill ul li {
+    margin: 3vh 2vh;
+    width: fit-content;
+    list-style: none;
+}
+section#skill ul li img{
     width: 55px;
     filter: drop-shadow(0px 0px 10px rgba(128, 128, 128, 0.497));
+}
+
+.form-chat {
+    height: 12vh;
+}
+.form-chat .chat {
+    border-radius: 20px;
+}
+.form-chat input[type="text"] {
+    width: 100%;
+    height: 54px;
+    border-radius: 21px;
+    border: none;
+    outline: none !important;
+    padding: 22px;
+    background-color: #f6fcff;
+}
+.form-chat input[type="text"]:-moz-placeholder {
+    color: #2E78A5;
+}
+@media (max-width: 576px) {
+    .form-chat input[type="text"] {
+        width: 80%;
+    }
+}
+.form-chat a i {
+    position: relative;
+    padding: 15px;
+    font-size: 1.5em;
+    transform: translateX(-10%);
+    margin-left: 20px;
+    border-radius: 50%;
+    background-color: #2E78A5;
+    color: #fff;
 }

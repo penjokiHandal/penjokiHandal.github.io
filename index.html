@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Penjoki Handal</title>
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
@@ -19,101 +20,159 @@
             <div class="welcome hidden" id="welcome">Penjoki Handal</div>
         </div>
     </div>
-
-    <div class="main-content">
-        <div class="sidebar shadow">
-            <div class="sidebar-logo">
-                <div class="row justify-content-center">
-                    <div class="col-4 text-center">
-                        <img src="assets/img/logo.png" alt="logo-penjoki-handal">
-                    </div>
-                    <div class="col-8">
-                        <div class="brand-name mb-0 pb-0">Penjoki Handal</div>
-                        <div class="tagline mt-0 pt-0">Pusing? Jokiin Aja!</div>
-                    </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark shadow bg-blue fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><img src="assets/img/logo.png" alt="logo-penjoki-handal me-3"> Penjoki Handal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link active me-3" aria-current="page" href="#"><i class="fa-solid fa-house-chimney"></i> Beranda</a>
+                    <a class="nav-link me-3" href="#"><i class="fa-solid fa-coins"></i> Harga</a>
+                    <a class="nav-link" href="#"><i class="fa-regular fa-folder-open"></i> Testimoni</a>
+                    <a class="nav-link text-warning fw-semibold" href="#"><i class="fa-solid fa-phone"></i> Hubungi</a>
                 </div>
-            </div>
-            <div class="sidebar-menu">
-                <a href="#" class="active"><i class="fa-solid fa-house-chimney me-2"></i>Beranda</a>
-                <a href="#"><i class="fa-solid fa-coins me-2"></i>Harga</a>
-                <a href="#"><i class="fa-regular fa-folder-open me-2"></i>Testimoni</a>
-                <a href="#"><i class="fa-solid fa-phone me-2"></i>Hubungi</a>
             </div>
         </div>
-        <section id="frame-utama">
-            <section id="skill" class="">
-                <div class="row justify-content-start">
-                    <div class="col-auto">
-                        <div class="pertanyaan shadow text-end">
-                            <div class="">Tugas ga selesai-selesai? 😭</div>
-                            <small class="text-end">23:10</small>
-                        </div>
-                        <div class="pertanyaan shadow text-end">
-                            <div class="">Pengen liburan tapi disuruh bikin website? 😭</div>
-                            <small class="text-end">23:10</small> 
-                        </div>
-                        <div class="pertanyaan shadow text-end">
-                            <div class="">Udah bikin tapi error terus? 😭</div>
-                            <small class="text-end">23:10</small>
-                        </div>
-                        <div class="pertanyaan shadow text-end">
-                            <div class="">Bingung mikirin konsep? 😭</div>
-                            <small class="text-end">23:10</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="jawaban mt-3">
-                    <p class="text-secondary shadow">
-                        <span class="text-blue fw-bold">Jokiin Aja!</span><br>Kami menyediakan jasa joki tugas pembuatan website menggunakan..
-                    </p>
-                    <div class="row justify-content-center">
-                        <div class="col-md-6">
-                            <ul class="text-blue">
-                                <li>
-                                    <div class="skill-item text-center fw-bold">
-                                        <img src="assets/img/html-5.png" alt="logo html" class="me-2"> HTML
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="skill-item text-center fw-bold">
-                                        <img src="assets/img/css-3.png" alt="logo css" class="me-2"> CSS
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="skill-item text-center fw-bold">
-                                        <img src="assets/img/js.png" alt="logo Javascript" class="me-2"> Javascript
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="text-blue">
-                                <li>
-                                    <div class="skill-item text-center fw-bold">
-                                        <img src="assets/img/php.png" alt="logo PHP" class="me-2"> PHP
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="skill-item text-center fw-bold">
-                                        <img src="assets/img/mysql.png" alt="logo mysql" class="me-2"> Mysql
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="skill-item text-center fw-bold">
-                                        <img src="assets/img/bootstrap.png" alt="logo bootstrap" class="me-2"> Bootstrap
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <p class="text-secondary shadow">
-                        <span class="fw-bold text-blue">Aplikasi udah jadi tapi masih disuruh bikin laporan? Tenang</span><br>
-                        mimin bisa kok mengatasi ituu. yukk langsung joki aja di <span>penjoki handal</span>. Jangan lupa klik tombol <a href="#" class="text-blue fw-semibold">hubungi</a> untuk order jokian yaaaa😊
-                    </p>
-                </div>
-            </section>
-        </section>
+    </nav>
+    
+    <section id="skill">
+    <div class="container">
+    <div class="pertanyaan shadow ms-auto">
+        <div class="ms-auto">Tugasku ga selesai-selesai nihh 😭</div>
+        <div class="text-end">
+            <small>23:10 <i class="fa-solid fa-check-double text-warning ms-2"></i></small>
+        </div>
     </div>
+    <div class="pertanyaan shadow ms-auto">
+        <div class="ms-auto">Pengen liburan tapi disuruh bikin website 😭</div>
+        <div class="text-end">
+            <small>23:10 <i class="fa-solid fa-check-double text-warning ms-2"></i></small> 
+        </div>
+    </div>
+    <div class="pertanyaan shadow ms-auto">
+        <div class="ms-auto">Udah bikin tapi error teruss 😭</div>
+        <div class="text-end">
+            <small>23:10 <i class="fa-solid fa-check-double text-warning ms-2"></i></small>
+        </div>
+    </div>
+    <div class="pertanyaan shadow ms-auto">
+        <div class="ms-auto">Bingung mikirin konsep 😭</div>
+        <div class="text-end">
+            <small>23:10 <i class="fa-solid fa-check-double text-warning ms-2"></i></small>
+        </div>
+    </div>
+    <div class="jawaban text-secondary shadow">
+        <span class="text-blue fw-bold">Jokiin Aja!</span><br>Kami menyediakan jasa joki tugas pembuatan website menggunakan..
+        <div class="text-end">
+            <small class="d-block">23:10</small>
+        </div>
+    </div>
+    <div class="row justify-content-start">
+        <div class="col-md-auto">
+            <ul class="text-blue">
+                <li>
+                    <div class="skill-item text-center fw-bold">
+                        <img src="assets/img/html-5.png" alt="logo html" class="me-2"> HTML
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-item text-center fw-bold">
+                        <img src="assets/img/css-3.png" alt="logo css" class="me-2"> CSS
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-item text-center fw-bold">
+                        <img src="assets/img/js.png" alt="logo Javascript" class="me-2"> Javascript
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-auto">
+            <ul class="text-blue">
+                <li>
+                    <div class="skill-item text-center fw-bold">
+                        <img src="assets/img/php.png" alt="logo PHP" class="me-2"> PHP
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-item text-center fw-bold">
+                        <img src="assets/img/mysql.png" alt="logo mysql" class="me-2"> Mysql
+                    </div>
+                </li>
+                <li>
+                    <div class="skill-item text-center fw-bold">
+                        <img src="assets/img/bootstrap.png" alt="logo bootstrap" class="me-2"> Bootstrap
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pertanyaan shadow text-end ms-auto">
+        <div class="">Kalau buat CRUD php native bisa min?</div>
+        <div class="text-end">
+            <small>23:10 <i class="fa-solid fa-check-double text-warning ms-2"></i></small>
+        </div>
+    </div>
+    <div class="text-secondary shadow jawaban">
+        <span class="text-secondary">Bisa bangett!</span>
+        <div class="text-end">
+            <small class="d-block">23:10</small>
+        </div>
+    </div>
+    <div class="pertanyaan shadow ms-auto">
+        <div class="">Kalau mau buat landing page pake bootstrap bisa min?</div>
+        <div class="text-end">
+            <small>23:10 <i class="fa-solid fa-check-double text-warning ms-2"></i></small>
+        </div>
+    </div>
+    <div class="text-secondary shadow jawaban">
+        <span class="text-secondary">Bisa dongg!</span>
+        <div class="text-end">
+            <small class="d-block">23:10</small>
+        </div>
+    </div>
+    <div class="pertanyaan shadow ms-auto">
+        <div class="">Kalau sekalian dibikin dokumen bisa juga min?</div>
+        <div class="text-end">
+            <small>23:10 <i class="fa-solid fa-check-double text-warning ms-2"></i></small>
+        </div>
+    </div>
+    <div class="text-secondary shadow jawaban">
+        <span class="text-secondary">Bisaa dongg, apasi yang mimin gabisa hehehe.</span>
+        <div class="text-end">
+            <small class="d-block">23:10</small>
+        </div>
+    </div>
+    <div class="text-secondary shadow jawaban">
+        <span class="text-secondary">Jokii ajaa di <span class="text-blue fw-semibold">Penjoki Handal</span>, disini kamu bisa joki website buat tugas sekolah, kuliah, tugas projek bahkan projek akhir skripsi lho!
+        <div class="text-end">
+            <small class="d-block">23:10</small>
+        </div>
+    </div>
+    <div class="text-secondary shadow jawaban">
+        Mau bikin projek e-commerce? sistem perpustakaan? Laundry? boleh bangettt. Tunggu apalagi, yukk order di <span class="text-blue fw-semibold">Penjoki Handal</span>
+        <div class="text-end">
+            <small class="d-block">23:10</small>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <div class="form-chat fixed-bottom">
+        <div class="container">
+            <div class="d-flex justify-content-end chat">
+                <input type="text" placeholder="Ketik Pesan" class="text-secondary">
+                <a href="https://wa.me/6289527158624" target="_blank" class="text-center"><i class="fa-regular fa-paper-plane"></i></a>
+            </div>
+        </div>
+    </div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+      AOS.init();
+    </script>
     <script src="https://kit.fontawesome.com/910e994c98.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
